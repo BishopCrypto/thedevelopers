@@ -2,5 +2,10 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "buildCommand": "bun run build",
   "installCommand": "bun install",
-  "framework": "vite"
+  "framework": "vite",
+  "build": {
+    "env": {
+      "NODE_VERSION": "20"
+    }
+  }
 }
