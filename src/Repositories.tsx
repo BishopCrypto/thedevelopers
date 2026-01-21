@@ -49,7 +49,7 @@ const Repositories = () => {
           <RepoItem
             name="atlas-global-insights"
             description="Enterprise-grade global background screening and passenger vetting platform for international corporations. Aggregates 200+ OSINT data sources across 190 countries for real-time identity verification, risk assessment, and compliance screening at scale."
-            updatedDate="Jan 18, 2025"
+            updatedDate="Aug 28, 2025"
             domainAsset={{ name: 'atlasglobalinsights.com', url: 'https://ap.www.namecheap.com/domains/domaincontrolpanel/atlasglobalinsights.com' }}
           />
 
@@ -74,7 +74,7 @@ const Repositories = () => {
         {/* Atlas Global Insights Detail */}
         <RepoDetail
           name="atlas-global-insights"
-          updatedDate="Jan 18, 2025"
+          updatedDate="Aug 28, 2025"
           files={[
             { name: '.github', isFolder: true, date: 'Jan 12, 2025' },
             { name: 'src', isFolder: true, date: 'Jan 18, 2025' },
