@@ -65,7 +65,7 @@ const Repositories = () => {
           {/* Validator II */}
           <RepoItem
             name="validator-ii"
-            description="Next-generation background check engine. Reduced processing costs 40%, increased throughput 3x over Validator I."
+            description="Enterprise background screening platform v2. Addressed critical over-counting discrepancies and implemented efficiency optimizations that reduced operational costs 40%, increased throughput 3x, to convert Virgin Voyages account from loss to profitability."
             updatedDate="Nov 5, 2024"
             collaborators={['Ryan Scott', 'WeLaunch']}
             isLast
