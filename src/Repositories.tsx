@@ -59,7 +59,7 @@ const Repositories = () => {
             name="validator"
             description="Background check software."
             updatedDate="Jul 14, 2025"
-            collaborators={['Ryan Scott', 'WeLaunch']}
+            collaborators={['Ryan Scott']}
           />
 
           {/* Validator II */}
@@ -67,7 +67,7 @@ const Repositories = () => {
             name="validator-ii"
             description="Next-generation background check engine. Reduced processing costs 40%, increased throughput 3x over Validator I."
             updatedDate="Nov 5, 2024"
-            collaborators={['Ryan Scott']}
+            collaborators={['Ryan Scott', 'WeLaunch']}
             isLast
           />
         </div>
