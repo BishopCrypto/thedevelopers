@@ -57,7 +57,7 @@ const Repositories = () => {
           <RepoItem
             name="validator"
             description="Background check software."
-            updatedDate="Jul 21, 2024"
+            updatedDate="Jul 14, 2025"
           />
 
           {/* Validator II */}
@@ -93,7 +93,7 @@ const Repositories = () => {
         {/* Validator Detail */}
         <RepoDetail
           name="validator"
-          updatedDate="Jul 21, 2024"
+          updatedDate="Jul 14, 2025"
           files={[
             { name: 'src', isFolder: true, date: 'Oct 22, 2024' },
             { name: 'checks', isFolder: true, date: 'Oct 15, 2024' },
