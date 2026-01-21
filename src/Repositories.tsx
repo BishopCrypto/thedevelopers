@@ -64,7 +64,7 @@ const Repositories = () => {
           <RepoItem
             name="validator-ii"
             description="Next-generation background check engine. Reduced processing costs 40%, increased throughput 3x over Validator I."
-            updatedDate="Oct 22, 2024"
+            updatedDate="Nov 5, 2024"
             isLast
           />
         </div>
@@ -108,7 +108,7 @@ const Repositories = () => {
         {/* Validator II Detail */}
         <RepoDetail
           name="validator-ii"
-          updatedDate="Oct 22, 2024"
+          updatedDate="Nov 5, 2024"
           files={[
             { name: 'src', isFolder: true, date: 'Jan 15, 2025' },
             { name: 'engine', isFolder: true, date: 'Jan 12, 2025' },
