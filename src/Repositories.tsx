@@ -50,6 +50,7 @@ const Repositories = () => {
             name="atlas-interactive"
             description="Enterprise-grade global background screening and passenger vetting platform for international corporations. Aggregates 200+ OSINT data sources across 190 countries for real-time identity verification, risk assessment, and compliance screening at scale."
             updatedDate="Aug 28, 2025"
+            collaborators={['Ryan Scott', 'Janet Kim']}
             domainAsset={{ name: 'atlasglobalinsights.com', url: 'https://ap.www.namecheap.com/domains/domaincontrolpanel/atlasglobalinsights.com' }}
           />
 
@@ -58,6 +59,7 @@ const Repositories = () => {
             name="validator"
             description="Background check software."
             updatedDate="Jul 14, 2025"
+            collaborators={['Ryan Scott', 'WeLaunch']}
           />
 
           {/* Validator II */}
@@ -65,6 +67,7 @@ const Repositories = () => {
             name="validator-ii"
             description="Next-generation background check engine. Reduced processing costs 40%, increased throughput 3x over Validator I."
             updatedDate="Nov 5, 2024"
+            collaborators={['Ryan Scott']}
             isLast
           />
         </div>
@@ -127,11 +130,12 @@ interface RepoItemProps {
   name: string
   description: string
   updatedDate: string
+  collaborators: string[]
   domainAsset?: { name: string; url: string }
   isLast?: boolean
 }
 
-const RepoItem = ({ name, description, updatedDate, domainAsset, isLast }: RepoItemProps) => (
+const RepoItem = ({ name, description, updatedDate, collaborators, domainAsset, isLast }: RepoItemProps) => (
   <div style={{
     padding: '1rem',
     borderBottom: isLast ? 'none' : '1px solid #21262d',
@@ -159,6 +163,12 @@ const RepoItem = ({ name, description, updatedDate, domainAsset, isLast }: RepoI
       </span>
       <span style={{ filter: 'blur(4px)', userSelect: 'none' }}>███.█ MB</span>
       <span>Updated {updatedDate}</span>
+      {collaborators.length > 0 && (
+        <span style={{ display: 'flex', alignItems: 'center', gap: '0.25rem' }}>
+          <CollaboratorIcon />
+          {collaborators.join(', ')}
+        </span>
+      )}
     </div>
     {domainAsset && (
       <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', fontSize: '0.75rem', color: '#8b949e', marginTop: '0.5rem' }}>
@@ -270,6 +280,12 @@ const FolderIcon = () => (
 const FileIcon = () => (
   <svg width="16" height="16" viewBox="0 0 16 16" fill="#8b949e">
     <path d="M2 1.75C2 .784 2.784 0 3.75 0h6.586c.464 0 .909.184 1.237.513l2.914 2.914c.329.328.513.773.513 1.237v9.586A1.75 1.75 0 0 1 13.25 16h-9.5A1.75 1.75 0 0 1 2 14.25Zm1.75-.25a.25.25 0 0 0-.25.25v12.5c0 .138.112.25.25.25h9.5a.25.25 0 0 0 .25-.25V6h-2.75A1.75 1.75 0 0 1 9 4.25V1.5Zm6.75.062V4.25c0 .138.112.25.25.25h2.688l-.011-.013-2.914-2.914-.013-.011Z"/>
+  </svg>
+)
+
+const CollaboratorIcon = () => (
+  <svg width="16" height="16" viewBox="0 0 16 16" fill="#8b949e">
+    <path d="M10.5 5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0Zm.061 3.073a4 4 0 1 0-5.123 0 6.004 6.004 0 0 0-3.431 5.142.75.75 0 0 0 1.498.07 4.5 4.5 0 0 1 8.99 0 .75.75 0 1 0 1.498-.07 6.005 6.005 0 0 0-3.432-5.142Z"/>
   </svg>
 )
 
