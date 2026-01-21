@@ -57,14 +57,14 @@ const Repositories = () => {
           <RepoItem
             name="validator"
             description="Background check software."
-            updatedDate="Oct 22, 2024"
+            updatedDate="Jul 21, 2024"
           />
 
           {/* Validator II */}
           <RepoItem
             name="validator-ii"
             description="Next-generation background check engine. Reduced processing costs 40%, increased throughput 3x over Validator I."
-            updatedDate="Jan 15, 2025"
+            updatedDate="Oct 22, 2024"
             isLast
           />
         </div>
@@ -93,7 +93,7 @@ const Repositories = () => {
         {/* Validator Detail */}
         <RepoDetail
           name="validator"
-          updatedDate="Oct 22, 2024"
+          updatedDate="Jul 21, 2024"
           files={[
             { name: 'src', isFolder: true, date: 'Oct 22, 2024' },
             { name: 'checks', isFolder: true, date: 'Oct 15, 2024' },
@@ -108,7 +108,7 @@ const Repositories = () => {
         {/* Validator II Detail */}
         <RepoDetail
           name="validator-ii"
-          updatedDate="Jan 15, 2025"
+          updatedDate="Oct 22, 2024"
           files={[
             { name: 'src', isFolder: true, date: 'Jan 15, 2025' },
             { name: 'engine', isFolder: true, date: 'Jan 12, 2025' },
