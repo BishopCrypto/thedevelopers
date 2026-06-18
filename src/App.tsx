@@ -31,7 +31,7 @@ function App() {
         </div>
 
         {/* Navigation / CTA */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 w-full max-w-md mx-auto">
+        <div className="grid grid-cols-1 gap-4 w-full max-w-lg mx-auto">
           {/* Link 1: The Studio */}
           <a
             href="https://nomic.ventures"
@@ -42,19 +42,6 @@ function App() {
               <i className="fa-solid fa-rocket text-green-500 text-2xl mb-1 group-hover:scale-110 transition-transform"></i>
               <span className="text-white font-bold tracking-wide group-hover:text-green-400 transition-colors">Nomic Ventures</span>
               <span className="text-xs text-gray-500 uppercase tracking-widest">The Studio</span>
-            </div>
-          </a>
-
-          {/* Link 2: Consulting */}
-          <a
-            href="https://nomic.ventures/consult"
-            className="group relative block p-px rounded-lg overflow-hidden bg-gradient-to-b from-gray-700/50 to-transparent hover:from-gray-500/50 transition-all duration-300"
-          >
-            <div className="absolute inset-0 bg-black/90 m-[1px] rounded-lg group-hover:bg-black/80 transition-colors"></div>
-            <div className="relative p-6 flex flex-col items-center justify-center h-full space-y-2 text-center">
-              <i className="fa-solid fa-chess text-gray-400 text-2xl mb-1 group-hover:scale-110 transition-transform"></i>
-              <span className="text-gray-200 font-bold tracking-wide group-hover:text-white transition-colors">Strategic Consulting</span>
-              <span className="text-xs text-gray-500 uppercase tracking-widest">Enterprise & M&A</span>
             </div>
           </a>
         </div>
